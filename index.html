@@ -2,32 +2,392 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="terminal-0.7.1.min.css" />
-    <!-- <link rel="stylesheet" href="/css/animate-3.7.2.min.css" /> -->
-    <link rel="stylesheet" href="console.css" />
+
+    <!--========== BOX ICONS ==========-->
     <link
-      rel="icon"
-      href="img/1458264592_laptop_computer_pc_device_notebook_netbook_internet_icon-icons.com_55334.svg"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <title>Regi Witanto</title>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Regi Witanto | Resume</title>
   </head>
-  <body class="terminal">
-    <div class="container">
-      <div class="terminal-nav">
-        <header class="terminal-logo">
-          <div class="logo terminal-prompt">
-            <a href="index.html" class="no-style site-name">regi-witanto</a>:~#
-          </div>
-        </header>
-        <nav class="terminal-menu">
-          <ul>
-            <li><a href="about.html">tentang-saya/</a></li>
-            <li><a href="experience.html">pengalaman-kerja/</a></li>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Regi</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>
+                Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                Profile
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>
+                Education
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>
+                Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>
+                Experience
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>
+                Certificates
+              </a>
+            </li>
           </ul>
-        </nav>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="img/original.jpg" alt="" class="home__img" />
+
+                <h1 class="home__title">REGI <strong>WITANTO</strong>, S.T.</h1>
+                <h3 class="home__profession">Software Developer</h3>
+
+                <!-- Button to download your CV saved in the pdf folder. Available for mobile. -->
+                <div>
+                  <a download="" href="#" class="home__button-movil"
+                    >Download</a
+                  >
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> Bandung, Indonesia
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  witantoregi@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> 0838-2160-5844
+                </span>
+              </div>
+            </div>
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/regiwitanto/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> regiwitanto
+              </a>
+              <a
+                href="https://github.com/regiwitanto"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> regiwitanto
+              </a>
+              <a
+                href="https://twitter.com/regiwitanto"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-twitter social__icon"></i> regiwitanto
+              </a>
+            </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">-</p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Bachelor of Information Systems Engineering
+                  </h3>
+                  <span class="education__studies"
+                    >Sangga Buana YPKP University, Bandung</span
+                  >
+                  <span class="education__year">2012 - 2016</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">SMA Negeri 1 Cimahi</h3>
+                  <span class="education__year">2009 - 2012</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Communication
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Problem Solving
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Programming
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Time Management
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Teamwork
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Accuracy & Attention To
+                  Detail
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Self Development
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">BACK-END DEVELOPER</h3>
+                  <span class="experience__company"
+                    >Feb. 2021 - Present | Telkom Indonesia</span
+                  >
+                  <p class="experience__description">-</p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">BACK-END DEVELOPER</h3>
+                  <span class="experience__company"
+                    >Aug. 2020 - Jan. 2021 | Freelance</span
+                  >
+                  <p class="experience__description">-</p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">BACK-END DEVELOPER</h3>
+                  <span class="experience__company"
+                    >Feb. 2018 - Jul. 2020 | PT. Padepokan Tujuh Sembilan</span
+                  >
+                  <p class="experience__description">-</p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">CUSTOMER CARE OFFICER</h3>
+                  <span class="experience__company"
+                    >Sep. 2016 - Nov. 2017 | Standard Chartered Bank</span
+                  >
+                  <p class="experience__description">-</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Certificate of Appreciation - Big Data Analysis and
+                  Visualization Workshop by ITB (2020)
+                </h3>
+                <p class="certificate__description">
+                  Is hereby awarded this certificate in contribution as
+                  "Participant" in the Virtual Workshop on Big Data Analysis and
+                  Visualization.
+                </p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Certificate for Achievement - Indonesia Scrum Master I by
+                  EKIPA (2020)
+                </h3>
+                <p class="certificate__description">
+                  Is awarded the designation Certified Indonesia Scrum Master I
+                  for completing requirements for the certification.
+                </p>
+              </div>
+
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p class="certificate__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laboriosam eum nesciunt provident repellat quisquam fuga
+                  consequuntur eius suscipit eos voluptas.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Indonesian
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> English
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Music</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-movie-play interests__icon"></i>
+                <span class="interests__name">Movie</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i>
+                <span class="interests__name">Read</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-football interests__icon"></i>
+                <span class="interests__name">Football</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="script/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="script/main.js"></script>
   </body>
 </html>
